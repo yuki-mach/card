@@ -1,0 +1,106 @@
+# OSX
+.DS_Store
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+.xcode.env.local
+
+# iOS generated files
+ios/**/*.xcodeproj/
+ios/**/*.xcworkspace/
+ios/**/xcshareddata/
+ios/**/Contents.json
+ios/**/Images.xcassets/
+ios/**/AppIcon*
+ios/**/Splash*
+ios/**/image*.png
+ios/**/Info.plist
+ios/**/*Bridging-Header.h
+ios/**/AppDelegate.*
+ios/**/*.entitlements
+
+# Android/IntelliJ
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
+
+# Android generated resources
+android/app/src/main/res/drawable*/
+android/app/src/main/res/mipmap*/
+android/app/src/main/res/*splashscreen*
+android/app/src/main/res/*_background*
+android/app/src/main/res/*_foreground*
+android/app/src/main/res/*ic_launcher*
+android/app/src/main/res/*rn_edit_text_material*
+
+# node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Bundle artifacts
+*.jsbundle
+*.bundle
+
+# CocoaPods
+/ios/Pods/
+/Pods/
+
+# Expo
+.expo/
+web-build/
+dist/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# Temporary files created by Metro to check the health of the file watcher
+.metro-health-check*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+ios/.xcode.env
+# Testing
+coverage/
+__tests__/
+
+# Editor specific
+.vscode/
+.idea/
+
+# Caches
+.eslintcache
+.babel-cache
+
+# Logs
+logs
+*.log
