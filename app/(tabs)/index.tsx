@@ -1,11 +1,14 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import { Image, StyleSheet, Platform, TouchableOpacity  } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
-
+import { router } from 'expo-router';
 export default function HomeScreen() {
+  const navigateToCamera = () => {
+    router.push('../camera');
+  };
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
@@ -49,6 +52,26 @@ export default function HomeScreen() {
           <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
           <ThemedText type="defaultSemiBold">app-example</ThemedText>.
         </ThemedText>
+      </ThemedView>
+      <ThemedView style={styles.stepContainer}>
+        <ThemedText type="subtitle">Camera</ThemedText>
+        <ThemedText>
+          Try out the camera functionality in this app.
+        </ThemedText>
+        <TouchableOpacity 
+          style={{
+            backgroundColor: '#2196F3',
+            padding: 12,
+            borderRadius: 8,
+            alignItems: 'center',
+            marginTop: 10,
+          }} 
+          onPress={navigateToCamera}
+        >
+          <ThemedText style={{color: 'white', fontWeight: '600'}}>
+            Open Camera
+          </ThemedText>
+        </TouchableOpacity>
       </ThemedView>
     </ParallaxScrollView>
   );
