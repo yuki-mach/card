@@ -1,25 +1,4 @@
-# OSX
-.DS_Store
-
-# Xcode
-build/
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata
-*.xccheckout
-*.moved-aside
-DerivedData
-*.hmap
-*.ipa
-*.xcuserstate
-project.xcworkspace
 .xcode.env.local
-
 # iOS generated files
 ios/**/*.xcodeproj/
 ios/**/*.xcworkspace/
@@ -33,9 +12,7 @@ ios/**/Info.plist
 ios/**/*Bridging-Header.h
 ios/**/AppDelegate.*
 ios/**/*.entitlements
-.cxx/
-*.keystore
-!debug.keystore
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
 # Android generated resources
 android/app/src/main/res/drawable*/
@@ -102,3 +79,22 @@ android/app/src/main/*
     
 
         
+android/app/build.gradle
+android/app/debug.keystore
+android/app/proguard-rules.pro
+android/app/src/debug/AndroidManifest.xml
+android/app/src/main/AndroidManifest.xml
+android/app/src/main/java/com/anonymous/card/MainActivity.kt
+android/app/src/main/java/com/anonymous/card/MainApplication.kt
+android/app/src/main/res/values-night/colors.xml
+android/app/src/main/res/values/colors.xml
+android/app/src/main/res/values/strings.xml
+android/app/src/main/res/values/styles.xml
+android/build.gradle
+android/gradle.properties
+android/gradle/wrapper/gradle-wrapper.jar
+android/gradle/wrapper/gradle-wrapper.properties
+android/gradlew
+android/gradlew.bat
+android/settings.gradle
+*.gradle
